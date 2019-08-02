@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>BMI Calculator</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/floating-labels/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="floating-labels.css" rel="stylesheet">
+    <script type="text/javascript" src="/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css"/></head>
+
+<body>
+<form action="/result/add" class="form-signin" th:object="${user}">
+    <div class="text-center mb-4">
+        <img class="mb-4" src="https://bi.im-g.pl/im/56/7d/17/z24629334IH,Wskaznik-BMI-jest-uzywany-do-oceny-prawidlowej-wag.jpg" alt="" width="272" height="172">
+        <h1 class="h3 mb-3 font-weight-normal">What is your BMI?</h1>
+    </div>
+    <label>Choose your sex</label>
+    <div class="container row">
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="sex" id="inlineRadio1" value="MEN" required>
+            <label class="form-check-label" for="inlineRadio1">men</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="sex" id="inlineRadio2" value="WOMEN" required>
+            <label class="form-check-label" for="inlineRadio2">women</label>
+        </div>
+    </div>
+    <label>Your name</label>
+    <div class="form-label-group">
+        <input type="text" th:field="*{name}" class="form-control" required autofocus>
+    </div>
+    <label>Your surname</label>
+    <div class="form-label-group">
+        <input type="text" th:field="*{surname}" class="form-control" placeholder="Surname" required autofocus>
+    </div>
+    <label>Your weigth in kg</label>
+    <div class="form-label-group">
+        <input type="number" th:field="*{weigth}" class="form-control" placeholder="Weigth" required autofocus>
+    </div>
+    <label>Your heigth in meters</label>
+    <div class="form-label-group">
+        <input type="number" th:field="*{heigth}" class="form-control" placeholder="Heigth" required>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Calculate</button>
+</form>
+<form id="go-base" action="/result">
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Go to base</button>
+</form>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
