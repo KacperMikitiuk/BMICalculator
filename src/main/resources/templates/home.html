@@ -46,14 +46,12 @@
     <div class="form-label-group">
         <input type="number" th:field="*{weigth}" class="form-control" placeholder="Weigth" required autofocus>
     </div>
-    <label>Your heigth in meters</label>
+    <label>Your heigth in centimeters</label>
     <div class="form-label-group">
         <input type="number" th:field="*{heigth}" class="form-control" placeholder="Heigth" required>
     </div>
     <button class="btn btn-lg btn-primary btn-block" type="submit">Calculate</button>
-</form>
-<form id="go-base" action="/result">
-    <button class="btn btn-lg btn-primary btn-block" type="submit">Go to base</button>
+    <a href="/result">Go to base</a>
 </form>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
